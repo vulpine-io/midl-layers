@@ -1,0 +1,25 @@
+= Midl Middleware Layers
+
+Useful middleware layer implementations for use with
+https://github.com/vulpine-io/midl[vulpine-io/midl].
+
+== Implementations
+
+=== Request ID
+
+==== UUID
+
+Request ID generator using https://github.com/google/uuid[google/uuid] for
+generating the IDs.
+
+IDs are appended to a request's additional context map under a key defined in
+the public constant `midlid.KeyRequestId`.
+
+==== ShortID
+
+Request ID generator using https://github.com/teris-io/shortid[teris-id/shortid]
+for generating the IDs.
+
+IDs are appended to a request's additional context map under a key defined in
+the public constant `midlid.KeyRequestId`.
+
