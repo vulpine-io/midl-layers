@@ -15,6 +15,11 @@ generating the IDs.
 IDs are appended to a request's additional context map under a key defined in
 the public constant `midlid.KeyRequestId`.
 
+[source, shell-session]
+----
+$ go get github.com/vulpine-io/midl-layers/request-id/uuid
+----
+
 ==== ShortID
 
 Request ID generator using https://github.com/teris-io/shortid[teris-id/shortid]
@@ -23,3 +28,7 @@ for generating the IDs.
 IDs are appended to a request's additional context map under a key defined in
 the public constant `midlid.KeyRequestId`.
 
+[source, shell-session]
+----
+$ go get github.com/vulpine-io/midl-layers/request-id/short-id
+----
