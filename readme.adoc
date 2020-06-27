@@ -5,12 +5,12 @@ https://github.com/vulpine-io/midl[vulpine-io/midl].
 
 == Implementations
 
-=== Request ID
+=== Request IDs
 
 ==== UUID
 
-Request ID generator using https://github.com/google/uuid[google/uuid] for
-generating the IDs.
+Request ID generator using https://github.com/google/uuid[google/uuid] (v1.1.1)
+for generating the IDs.
 
 IDs are appended to a request's additional context map under a key defined in
 the public constant `midlid.KeyRequestId`.
@@ -22,8 +22,8 @@ $ go get github.com/vulpine-io/midl-layers/request-id/uuid
 
 ==== ShortID
 
-Request ID generator using https://github.com/teris-io/shortid[teris-id/shortid]
-for generating the IDs.
+Request ID generator using https://github.com/teris-io/shortid[teris-io/shortid]
+(v0.0.0-20171029131806-771a37caa5cf) for generating the IDs.
 
 IDs are appended to a request's additional context map under a key defined in
 the public constant `midlid.KeyRequestId`.
@@ -32,3 +32,18 @@ the public constant `midlid.KeyRequestId`.
 ----
 $ go get github.com/vulpine-io/midl-layers/request-id/short-id
 ----
+
+=== Validation
+
+==== JSON Schema
+
+===== Qri-IO
+
+Request body JSON Schema validation via
+https://github.com/qri-io/jsonschema[qri-io/jsonschema] (v0.2.0)
+
+[source, shell-session]
+----
+$ go get github.com/vulpine-io/midl-layers/json/schema/qri-io
+----
+
